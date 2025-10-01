@@ -42,7 +42,6 @@ export default function ModulesControls() {
           </DropdownItem>
         </DropdownMenu>
       </Dropdown>
-      {/* Implement the View Progress and Collapse All buttons with IDs wd-view-progress and wd-collapse-all */}
       <Button
         variant="secondary"
         size="lg"
