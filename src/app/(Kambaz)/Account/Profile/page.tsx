@@ -1,41 +1,39 @@
-import Link from "next/link";
+"use client";
+
+import { Button, FormControl, FormGroup } from "react-bootstrap";
 
 export default function Profile() {
   return (
     <div id="wd-profile-screen">
       <h3>Profile</h3>
-      <input
-        defaultValue="alice"
-        placeholder="username"
-        className="wd-username"
-      />
-      <br />
-      <input
-        defaultValue="123"
-        placeholder="password"
-        type="password"
-        className="wd-password"
-      />
-      <br />
-      <input defaultValue="Alice" placeholder="First Name" id="wd-firstname" />
-      <br />
-      <input
-        defaultValue="Wonderland"
-        placeholder="Last Name"
-        id="wd-lastname"
-      />
-      <br />
-      <input defaultValue="2000-01-01" type="date" id="wd-dob" />
-      <br />
-      <input defaultValue="alice@wonderland" type="email" id="wd-email" />
-      <br />
-      <select defaultValue="FACULTY" id="wd-role">
-        <option value="USER">User</option> <option value="ADMIN">Admin</option>
-        <option value="FACULTY">Faculty</option>{" "}
-        <option value="STUDENT">Student</option>
-      </select>
-      <br />
-      <Link href="Signin"> Sign out </Link>
+      <FormGroup className="mb-3" controlId="wd-profile-username">
+        <FormControl className="mb-3" value="alice" />
+      </FormGroup>
+      <FormGroup className="mb-3" controlId="wd-signup-password">
+        <FormControl className="mb-3" type="password" value="123" />
+      </FormGroup>
+      <FormGroup className="mb-3" controlId="wd-firstname">
+        <FormControl className="mb-3" value="Alice" />
+      </FormGroup>
+      <FormGroup className="mb-3" controlId="wd-lastname">
+        <FormControl className="mb-3" value="Wonderland" />
+      </FormGroup>
+      <FormGroup className="mb-3" controlId="wd-dob">
+        <FormControl className="mb-3" type="date" />
+      </FormGroup>
+      <FormGroup className="mb-3" controlId="wd-email">
+        <FormControl
+          className="mb-3"
+          type="email"
+          value="alice@wonderland.com"
+        />
+      </FormGroup>
+      <FormGroup className="mb-3" controlId="wd-role">
+        <FormControl className="mb-3" value="User" />
+      </FormGroup>
+      <Button className="w-100 mb-3" variant="danger">
+        Signout
+      </Button>
     </div>
   );
 }
