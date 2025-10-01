@@ -84,7 +84,7 @@ export default function KambazNavigation() {
       </ListGroupItem>
       <ListGroupItem className="border-0 bg-black text-center">
         <Link
-          href="/Dashboard"
+          href="https://github.com/Adnu100/kambaz-next-js"
           id="wd-dashboard-link"
           className="text-white text-decoration-none"
         >
