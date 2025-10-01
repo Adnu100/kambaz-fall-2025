@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   Button,
   Container,
@@ -14,6 +15,7 @@ import { FaCheckCircle, FaSearch } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa6";
 import { IoEllipsisVertical } from "react-icons/io5";
 import { RiFileEditLine } from "react-icons/ri";
+import "./styles.css";
 
 export default function Assignments() {
   return (
@@ -79,7 +81,14 @@ export default function Assignments() {
                 <RiFileEditLine className="fs-4 me-3" />
               </Col>
               <Col md={8} className="align-items-center ps-0">
-                <strong>A1</strong>
+                <strong>
+                  <Link
+                    className="text-bold text-dark assignment-link"
+                    href="/Courses/1234/Assignments/123"
+                  >
+                    A1
+                  </Link>
+                </strong>
                 <div>
                   <span className="text-danger me-2 text-nowrap">
                     Multiple Modules
@@ -116,7 +125,14 @@ export default function Assignments() {
                 <RiFileEditLine className="fs-4 me-3" />
               </Col>
               <Col md={8} className="align-items-center ps-0">
-                <strong>A2</strong>
+                <strong>
+                  <Link
+                    className="text-bold text-dark assignment-link"
+                    href="/Courses/1234/Assignments/123"
+                  >
+                    A2
+                  </Link>
+                </strong>
                 <div>
                   <span className="text-danger me-2 text-nowrap">
                     Multiple Modules
@@ -153,7 +169,14 @@ export default function Assignments() {
                 <RiFileEditLine className="fs-4 me-3" />
               </Col>
               <Col md={8} className="align-items-center ps-0">
-                <strong>A3</strong>
+                <strong>
+                  <Link
+                    className="text-bold text-dark assignment-link"
+                    href="/Courses/1234/Assignments/123"
+                  >
+                    A3
+                  </Link>
+                </strong>
                 <div>
                   <span className="text-danger me-2 text-nowrap">
                     Multiple Modules
