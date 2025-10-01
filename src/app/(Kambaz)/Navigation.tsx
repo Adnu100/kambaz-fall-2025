@@ -10,7 +10,7 @@ export default function KambazNavigation() {
   return (
     <ListGroup
       className="rounded-0 position-fixed bottom-0 top-0 d-none d-md-block bg-black z-2"
-      style={{ width: 120 }}
+      style={{ width: 100 }}
       id="wd-kambaz-navigation"
     >
       <ListGroupItem
@@ -28,7 +28,7 @@ export default function KambazNavigation() {
           id="wd-account-link"
           className="text-white text-decoration-none"
         >
-          <FaRegCircleUser className="fs-1 text-white" />
+          <FaRegCircleUser className="fs-3 text-white" />
           Account
         </Link>
       </ListGroupItem>
@@ -38,7 +38,7 @@ export default function KambazNavigation() {
           id="wd-dashboard-link"
           className="text-white text-decoration-none"
         >
-          <AiOutlineDashboard className="fs-1 text-danger" />
+          <AiOutlineDashboard className="fs-3 text-danger mx-3" />
           Dashboard
         </Link>
       </ListGroupItem>
@@ -48,7 +48,7 @@ export default function KambazNavigation() {
           id="wd-dashboard-link"
           className="text-white text-decoration-none"
         >
-          <LiaBookSolid className="fs-1 text-danger" />
+          <LiaBookSolid className="fs-3 text-danger mx-3" />
           Courses
         </Link>
       </ListGroupItem>
@@ -58,7 +58,7 @@ export default function KambazNavigation() {
           id="wd-dashboard-link"
           className="text-white text-decoration-none"
         >
-          <IoCalendarOutline className="fs-1 text-danger" />
+          <IoCalendarOutline className="fs-3 text-danger mx-3" />
           Calendar
         </Link>
       </ListGroupItem>
@@ -68,7 +68,7 @@ export default function KambazNavigation() {
           id="wd-dashboard-link"
           className="text-white text-decoration-none"
         >
-          <FaInbox className="fs-1 text-danger" />
+          <FaInbox className="fs-3 text-danger mx-3" />
           Inbox
         </Link>
       </ListGroupItem>
@@ -78,7 +78,7 @@ export default function KambazNavigation() {
           id="wd-dashboard-link"
           className="text-white text-decoration-none"
         >
-          <ImLab className="fs-1 text-danger" />
+          <ImLab className="fs-3 text-danger mx-3" />
           Labs
         </Link>
       </ListGroupItem>
@@ -88,7 +88,7 @@ export default function KambazNavigation() {
           id="wd-dashboard-link"
           className="text-white text-decoration-none"
         >
-          <FaSquareGithub className="fs-1 text-danger" />
+          <FaSquareGithub className="fs-3 text-danger mx-3" />
           Github
         </Link>
       </ListGroupItem>
