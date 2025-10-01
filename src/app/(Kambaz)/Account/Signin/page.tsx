@@ -13,7 +13,7 @@ export default function Signin() {
       <FormGroup className="mb-3" controlId="wd-password">
         <FormControl className="mb-3" type="password" placeholder="password" />
       </FormGroup>
-      <Button className="w-100 mb-3" color="primary">
+      <Button className="w-100 mb-3" color="primary" href="/Dashboard">
         Signin
       </Button>
       <Link href="Signup" id="wd-signup-link">

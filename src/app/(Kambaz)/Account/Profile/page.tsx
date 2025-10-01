@@ -31,7 +31,7 @@ export default function Profile() {
       <FormGroup className="mb-3" controlId="wd-role">
         <FormControl className="mb-3" value="User" />
       </FormGroup>
-      <Button className="w-100 mb-3" variant="danger">
+      <Button className="w-100 mb-3" variant="danger" href="Signin">
         Signout
       </Button>
     </div>

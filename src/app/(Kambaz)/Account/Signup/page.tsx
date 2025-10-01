@@ -20,7 +20,7 @@ export default function Signup() {
           placeholder="verify password"
         />
       </FormGroup>
-      <Button className="w-100 mb-3" color="primary">
+      <Button className="w-100 mb-3" color="primary" href="Profile">
         Signup
       </Button>
       <Link href="Signin" id="wd-signup-link">
