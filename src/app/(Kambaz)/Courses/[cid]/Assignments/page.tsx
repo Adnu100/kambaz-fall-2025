@@ -39,9 +39,9 @@ export default function Assignments() {
           </Button>
         </Container>
       </Container>
-      <Container fluid="lg" className="d-flex">
+      <Container fluid="lg">
         <ListGroup className="rounded-0">
-          <ListGroupItem className="wd-module p-0 fs-6 border-gray bg-light">
+          <ListGroupItem className="wd-module p-0 fs-6">
             <div id="wd-assignments-title" className="wd-title p-3 ps-2 border">
               <Row>
                 <Col md={1} className="d-flex align-items-center m-0">
@@ -70,6 +70,8 @@ export default function Assignments() {
               </Row>
             </div>
           </ListGroupItem>
+        </ListGroup>
+        <ListGroup className="rounded-0 border-5 border-start border-success">
           <ListGroupItem className="wd-lesson p-3">
             <Row>
               <Col md={2} className="d-flex align-items-center">
