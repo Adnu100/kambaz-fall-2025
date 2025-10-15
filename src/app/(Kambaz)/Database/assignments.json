@@ -1,0 +1,83 @@
+[
+  {
+    "_id": "A101",
+    "title": "Propulsion Assignment",
+    "course": "RS101",
+    "notAvailableUntil": "2025-09-01",
+    "dueDate": "2025-09-10",
+    "totalPoints": 100,
+    "description": "Analyze basic propulsion system parameters and prepare a short report on thrust optimization."
+  },
+  {
+    "_id": "A102",
+    "title": "Combustion Analysis",
+    "course": "RS101",
+    "notAvailableUntil": "2025-09-12",
+    "dueDate": "2025-09-22",
+    "totalPoints": 75,
+    "description": "Perform combustion calculations for liquid rocket engines and compare fuel efficiency metrics."
+  },
+  {
+    "_id": "A103",
+    "title": "Nozzle Design Project",
+    "course": "RS101",
+    "notAvailableUntil": "2025-09-25",
+    "dueDate": "2025-10-05",
+    "totalPoints": 150,
+    "description": "Design a convergent-divergent nozzle and present simulation results for various chamber pressures."
+  },
+  {
+    "_id": "A201",
+    "title": "Aerodynamics Quiz",
+    "course": "RS102",
+    "notAvailableUntil": "2025-09-03",
+    "dueDate": "2025-09-08",
+    "totalPoints": 50,
+    "description": "Short quiz covering topics in fluid flow, lift generation, and drag coefficients."
+  },
+  {
+    "_id": "A202",
+    "title": "Flow Analysis",
+    "course": "RS102",
+    "notAvailableUntil": "2025-09-15",
+    "dueDate": "2025-09-25",
+    "totalPoints": 80,
+    "description": "Simulate airflow over a 2D airfoil using CFD software and analyze velocity and pressure distributions."
+  },
+  {
+    "_id": "A203",
+    "title": "Heating Analysis",
+    "course": "RS102",
+    "notAvailableUntil": "2025-09-28",
+    "dueDate": "2025-10-07",
+    "totalPoints": 90,
+    "description": "Examine heat transfer characteristics in compressible flow and prepare a technical summary."
+  },
+  {
+    "_id": "A301",
+    "title": "Structural Design Task",
+    "course": "RS103",
+    "notAvailableUntil": "2025-09-05",
+    "dueDate": "2025-09-18",
+    "totalPoints": 120,
+    "description": "Design and validate a lightweight structural frame capable of withstanding launch stresses."
+  },
+  {
+    "_id": "A302",
+    "title": "Orbital Calculations",
+    "course": "RS103",
+    "notAvailableUntil": "2025-09-20",
+    "dueDate": "2025-10-01",
+    "totalPoints": 110,
+    "description": "Calculate orbital transfer parameters and delta-v requirements for a satellite mission."
+  },
+  {
+    "_id": "A303",
+    "title": "Systems Engineering Exam",
+    "course": "RS103",
+    "notAvailableUntil": "2025-10-10",
+    "dueDate": "2025-10-20",
+    "totalPoints": 200,
+    "description": "Comprehensive exam assessing understanding of system integration, design, and testing principles."
+  }
+]

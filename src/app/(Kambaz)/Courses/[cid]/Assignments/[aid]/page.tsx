@@ -14,41 +14,30 @@ import {
   InputGroup,
   Row,
 } from "react-bootstrap";
+import * as db from "../../../../Database";
+import { useParams } from "next/navigation";
 
 export default function AssignmentEditor() {
+  const { cid, aid } = useParams();
+  const assignment = db.assignments.find(
+    (assignment) => assignment._id === aid && assignment.course === cid
+  );
+
   return (
     <div id="wd-assignments-editor">
       <FormGroup className="mb-3" controlId="wd-name">
         <FormLabel>Assignment Name</FormLabel>
-        <FormControl value="A1" />
+        <FormControl value={assignment?.title} />
       </FormGroup>
-      <Container className="mb-3 border p-3">
-        <p className="mb-3">
-          The assignment is{" "}
-          <span className="text-danger">available online</span>
-        </p>
-        <p className="mb-3">
-          Submit a link to the landing page of your Web application running on
-          Netlify.
-        </p>
-        <p className="mb-3">The landing page should include the following:</p>
-        <ul className="mb-3">
-          <li>Your full name and section</li>
-          <li>Links to each of the lab assignments</li>
-          <li>Link to the Kanbas application</li>
-          <li>Links to all relevant source code repositories</li>
-        </ul>
-        <p className="mb-3">
-          The Kanbas application should include a link to navigate back to the
-          landing page.
-        </p>
-      </Container>
+      <FormGroup className="mb-3" controlId="wd-description-textarea">
+        <FormControl as="textarea" rows={10} value={assignment?.description} />
+      </FormGroup>
       <FormGroup as={Row} className="mb-3" controlId="wd-points">
         <FormLabel className="text-end" column sm={4}>
           Points
         </FormLabel>
         <Col sm={8}>
-          <FormControl value="100" />
+          <FormControl value={assignment?.totalPoints} />
         </Col>
       </FormGroup>
       <FormGroup as={Row} className="mb-3" controlId="wd-group">
@@ -137,7 +126,10 @@ export default function AssignmentEditor() {
               <strong>Due</strong>
             </FormLabel>
             <InputGroup>
-              <FormControl type="datetime-local" value="2024-06-13 23:59" />
+              <FormControl
+                type="datetime-local"
+                value={`${assignment?.dueDate} 23:59`}
+              />
             </InputGroup>
           </FormGroup>
           <Row>
@@ -147,7 +139,10 @@ export default function AssignmentEditor() {
                   <strong>Available from</strong>
                 </FormLabel>
                 <InputGroup>
-                  <FormControl type="datetime-local" value="2024-06-06 23:59" />
+                  <FormControl
+                    type="datetime-local"
+                    value={`${assignment?.notAvailableUntil} 23:59`}
+                  />
                 </InputGroup>
               </FormGroup>
             </Col>
