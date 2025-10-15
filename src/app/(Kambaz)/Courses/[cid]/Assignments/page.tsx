@@ -83,7 +83,7 @@ export default function Assignments() {
           {assignments
             .filter((assignment) => assignment.course === cid)
             .map((assignment) => (
-              <ListGroupItem className="wd-lesson p-3">
+              <ListGroupItem className="wd-lesson p-3" key={assignment._id}>
                 <AssignmentRow assignment={assignment} />
               </ListGroupItem>
             ))}
