@@ -160,7 +160,12 @@ export default function AssignmentEditor() {
         </Col>
       </Row>
       <Container className="text-nowrap text-end">
-        <Button id="wd-add-assignment-group" variant="light" size="lg">
+        <Button
+          id="wd-add-assignment-group"
+          variant="light"
+          size="lg"
+          href={`/Courses/${cid}/Assignments/`}
+        >
           Cancel
         </Button>
         <Button
@@ -168,6 +173,7 @@ export default function AssignmentEditor() {
           variant="danger"
           size="lg"
           className="me-1"
+          href={`/Courses/${cid}/Assignments/`}
         >
           Save
         </Button>
